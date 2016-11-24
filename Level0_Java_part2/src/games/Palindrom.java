@@ -11,16 +11,14 @@ public class Palindrom {
     public boolean checkWord(String someWord) {
         StringBuilder builder = new StringBuilder(someWord);
         StringBuilder reverseWord = builder.reverse();
-        boolean compareWord = someWord.equalsIgnoreCase(String.valueOf(reverseWord));
-        return compareWord;
+        return someWord.equalsIgnoreCase(String.valueOf(reverseWord));
     }
 
     public boolean checkPhrase(String somePhrase) {
         String phraseWithoutSpaces = somePhrase.replace(" ", "");
         StringBuilder builder = new StringBuilder(phraseWithoutSpaces);
         StringBuilder reversePhrase = builder.reverse();
-        boolean comparePhrase = phraseWithoutSpaces.equalsIgnoreCase(String.valueOf(reversePhrase));
-        return comparePhrase;
+       return phraseWithoutSpaces.equalsIgnoreCase(String.valueOf(reversePhrase));
     }
 }
 

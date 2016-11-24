@@ -10,23 +10,20 @@ public class Arithmetic {
         int length = massiv.length;
         int calculateMultiplication = 1;
         for (int i = 0; i < length; i++) {
-            calculateMultiplication = calculateMultiplication * massiv[i];
+        calculateMultiplication = calculateMultiplication * massiv[i];
         }
-        return calculateMultiplication;
+       return calculateMultiplication;
     }
 
     public double power(int b, int c) {
-        double calculatePower = pow(b, c);
-        return calculatePower;
+        return  pow(b, c);
     }
 
     public double division(double d, double e) {
-        double calculateDivision = d / e;
-        return calculateDivision;
+        return d / e;
     }
 
     public double root(int f) {
-        double calculateRoot = sqrt(f);
-        return calculateRoot;
+       return sqrt(f);
     }
 }

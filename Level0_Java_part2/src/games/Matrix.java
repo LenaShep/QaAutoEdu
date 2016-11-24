@@ -5,7 +5,7 @@ package games;
  * Created by shepelevich on 11/14/2016.
  */
 public class Matrix {
-    public static void matrix(int matrixSize) {
+    public static int[][] matrix(int matrixSize) {
         int[][] matrix = new int[matrixSize][matrixSize];
         int k = 1;
         for (int i = 0; i < matrixSize; i++) {
@@ -17,7 +17,8 @@ public class Matrix {
                 } else k = 1;
             }
             System.out.println();
-        }
+        } 
+        return matrix;
     }
 }
 

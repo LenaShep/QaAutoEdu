@@ -4,7 +4,7 @@ package games;
  * Created by shepelevich on 11/14/2016.
  */
 public class Snail {
-    public static void calculateSnail(int size) {
+    public static int[][] calculateSnail(int size) {
         int firstElement = 0;
         if (size % 2 == 0) {
             firstElement = (size - 2) / 2;
@@ -56,7 +56,9 @@ public class Snail {
             }
             System.out.println();
         }
+        return mas;
     }
+
 }
 
 
