@@ -13,27 +13,27 @@ public class TestPalindrom {
     @Test
     public void checkThatReturnTrueForWordIsPalindrom() {
         String word = "потоп";
-        Assert.assertTrue(Palindrom.checkWord(word) == true);
+        Assert.assertTrue(Palindrom.checkWord(word));
 
     }
 
     @Test
     public void checkThatReturnFalseForWordIsNotPalindrom() {
         String word = "песня";
-        Assert.assertFalse(Palindrom.checkWord(word) == true);
+        Assert.assertFalse(Palindrom.checkWord(word));
 
     }
 
     @Test
     public void checkTahtCaseIgnoredinPalindromWord(){
         String word = "АнНа";
-        Assert.assertTrue(Palindrom.checkWord(word) == true);
+        Assert.assertTrue(Palindrom.checkWord(word));
     }
 
     @Test
     public void checkThatSpacesIgnoredInPalindromPhrase(){
         String phrase = "Яд ем как мед я";
-        Assert.assertTrue(Palindrom.checkPhrase(phrase) == true);
+        Assert.assertTrue(Palindrom.checkPhrase(phrase));
     }
 
     @Test
@@ -45,6 +45,6 @@ public class TestPalindrom {
     @Test
     public void checkThatPhraseWithSeveralSpacesIsAlsoPalindrom (){
         String phrase="Аргентина                    манит               негра";
-        Assert.assertTrue(Palindrom.checkPhrase(phrase)== true);
+        Assert.assertTrue(Palindrom.checkPhrase(phrase));
     }
 }

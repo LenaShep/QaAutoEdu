@@ -12,8 +12,9 @@ public class Square extends Figure {
         this.side = side;
     }
 
-    public void area() {
+    public double area() {
         area = side * side;
+        return 0;
     }
 
     public void changeSize(double koef) {

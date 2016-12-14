@@ -18,7 +18,7 @@ public abstract class Figure {
     x =x +x1;
     y =y +y1;
 }
-    public abstract void area();
+    public abstract double area();
 
     public abstract void changeSize(double koef);
 

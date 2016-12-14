@@ -43,8 +43,11 @@ public class TestSquare {
         Assert.assertTrue(square.area==1020.8025);
 
     }
+
     @Test
-    public void checkThatSquareObjectIsNotNull(){
-        Assert.assertNotNull(new Square(2, 8, 5.5));
+    public void checkThatAreaSquareIsNotNull(){
+        Square square=new Square(5, 2, 5);
+        square.area();
+        Assert.assertNotNull(square.area);
     }
 }

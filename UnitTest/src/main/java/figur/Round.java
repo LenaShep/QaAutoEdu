@@ -12,9 +12,10 @@ public class Round extends Figure {
         this.radius = radius;
     }
 
-    public void area() {
+    public double area() {
         area = Math.PI * radius;
 
+        return 0;
     }
 
     public void changeSize(double koef) {

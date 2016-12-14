@@ -1,0 +1,1827 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "check Matrix Creation",
+        "description": "",
+        "id": "matrix;check-matrix-creation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 137843310,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have set matrix size as 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 26
+                }
+              ],
+              "location": "MatrixStepDefs.iHaveSetMatrixSizeAs(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1559375,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I run method which creates matrix",
+            "match": {
+              "location": "MatrixStepDefs.iRunMethodWhichCreatesMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3623199,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Matrix created with 4 elements in line/column",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 20
+                }
+              ],
+              "location": "MatrixStepDefs.matrixCreatedWithElementsInLineColumn(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "check that matrix elements cannot be more than 9",
+        "description": "",
+        "id": "matrix;check-that-matrix-elements-cannot-be-more-than-9",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 120981,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I have set matrix size as 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 26
+                }
+              ],
+              "location": "MatrixStepDefs.iHaveSetMatrixSizeAs(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 269952,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I run method which creates matrix",
+            "match": {
+              "location": "MatrixStepDefs.iRunMethodWhichCreatesMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1775834,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Matrix elements are no more than 9",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 33
+                }
+              ],
+              "location": "MatrixStepDefs.matrixElementsAreNoMoreThan(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "check that matrix elements cannot be less than 1",
+        "description": "",
+        "id": "matrix;check-that-matrix-elements-cannot-be-less-than-1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128445,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I have set matrix size as 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 26
+                }
+              ],
+              "location": "MatrixStepDefs.iHaveSetMatrixSizeAs(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 256268,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I run method which creates matrix",
+            "match": {
+              "location": "MatrixStepDefs.iRunMethodWhichCreatesMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117248,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Matrix elements are no less than 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 33
+                }
+              ],
+              "location": "MatrixStepDefs.matrixElementsAreNoLessThan(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Matrix",
+    "description": "",
+    "id": "matrix",
+    "keyword": "Feature",
+    "uri": "testMatrix.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Matrix"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Check That Snail Power Size Equals To Max Element",
+        "description": "",
+        "id": "max-number-in-snail;check-that-snail-power-size-equals-to-max-element;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1174663,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select matrix size as \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 25
+                }
+              ],
+              "location": "MaxNumberInSnail.iSelectMatrixSizeAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 825716,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I run method which creates Snail matrix",
+            "match": {
+              "location": "MaxNumberInSnail.iRunMethodWhichCreatesSnailMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39808,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I find max element in the matrix snail",
+            "match": {
+              "location": "MaxNumberInSnail.iFindMaxElementInTheMatrixSnail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112583,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Max element is equal to \"25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 25
+                }
+              ],
+              "location": "MaxNumberInSnail.maxElementIsEqualTo(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@SnailSpecial"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Check That Snail Power Size Equals To Max Element",
+        "description": "",
+        "id": "max-number-in-snail;check-that-snail-power-size-equals-to-max-element;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 136842,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select matrix size as \"6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 25
+                }
+              ],
+              "location": "MaxNumberInSnail.iSelectMatrixSizeAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 360454,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I run method which creates Snail matrix",
+            "match": {
+              "location": "MaxNumberInSnail.iRunMethodWhichCreatesSnailMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31411,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I find max element in the matrix snail",
+            "match": {
+              "location": "MaxNumberInSnail.iFindMaxElementInTheMatrixSnail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87703,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Max element is equal to \"36\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "36",
+                  "offset": 25
+                }
+              ],
+              "location": "MaxNumberInSnail.maxElementIsEqualTo(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@SnailSpecial"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Check That Snail Power Size Equals To Max Element",
+        "description": "",
+        "id": "max-number-in-snail;check-that-snail-power-size-equals-to-max-element;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 181005,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select matrix size as \"25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 25
+                }
+              ],
+              "location": "MaxNumberInSnail.iSelectMatrixSizeAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6511807,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I run method which creates Snail matrix",
+            "match": {
+              "location": "MaxNumberInSnail.iRunMethodWhichCreatesSnailMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50383,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I find max element in the matrix snail",
+            "match": {
+              "location": "MaxNumberInSnail.iFindMaxElementInTheMatrixSnail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106363,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Max element is equal to \"625\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "625",
+                  "offset": 25
+                }
+              ],
+              "location": "MaxNumberInSnail.maxElementIsEqualTo(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@SnailSpecial"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Check That Snail Power Size Equals To Max Element",
+        "description": "",
+        "id": "max-number-in-snail;check-that-snail-power-size-equals-to-max-element;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 119115,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select matrix size as \"20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 25
+                }
+              ],
+              "location": "MaxNumberInSnail.iSelectMatrixSizeAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3231334,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I run method which creates Snail matrix",
+            "match": {
+              "location": "MaxNumberInSnail.iRunMethodWhichCreatesSnailMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85837,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I find max element in the matrix snail",
+            "match": {
+              "location": "MaxNumberInSnail.iFindMaxElementInTheMatrixSnail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119737,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Max element is equal to \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 25
+                }
+              ],
+              "location": "MaxNumberInSnail.maxElementIsEqualTo(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@SnailSpecial"
+          }
+        ]
+      }
+    ],
+    "name": "Max Number in Snail",
+    "description": "",
+    "id": "max-number-in-snail",
+    "keyword": "Feature",
+    "uri": "testMaxNumberInSnail.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SnailSpecial"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "check calculation of area for round",
+        "description": "",
+        "id": "figures;check-calculation-of-area-for-round",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1727318,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have radius 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 14
+                }
+              ],
+              "location": "OOPStepDefs.iHaveRadius(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54426,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "calculate area for the round",
+            "match": {
+              "location": "OOPStepDefs.calculateAreaForTheRound()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 312870,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Area is \"15.707963267948966\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15.707963267948966",
+                  "offset": 9
+                }
+              ],
+              "location": "OOPStepDefs.areaIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Nonstatic"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "check changing size for round with integer koef",
+        "description": "",
+        "id": "figures;check-changing-size-for-round-with-integer-koef",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 141196,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I have radius 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 14
+                }
+              ],
+              "location": "OOPStepDefs.iHaveRadius(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 108230,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have koef \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveKoef(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44163,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "change size of the radius",
+            "match": {
+              "location": "OOPStepDefs.changeSizeOfTheRadius()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31411,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "calculate area for the round",
+            "match": {
+              "location": "OOPStepDefs.calculateAreaForTheRound()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143995,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Area is \"31.41592653589793\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "31.41592653589793",
+                  "offset": 9
+                }
+              ],
+              "location": "OOPStepDefs.areaIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Nonstatic"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "check changing size for round with double koef",
+        "description": "",
+        "id": "figures;check-changing-size-for-round-with-double-koef",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 135287,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I have radius 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 14
+                }
+              ],
+              "location": "OOPStepDefs.iHaveRadius(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 560430,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I have koef \"0.55\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.55",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveKoef(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25502,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "change size of the radius",
+            "match": {
+              "location": "OOPStepDefs.changeSizeOfTheRadius()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21459,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "calculate area for the round",
+            "match": {
+              "location": "OOPStepDefs.calculateAreaForTheRound()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121914,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Area is \"8.63937979737193\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8.63937979737193",
+                  "offset": 9
+                }
+              ],
+              "location": "OOPStepDefs.areaIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@Nonstatic"
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "check changing size for round with big koef",
+        "description": "",
+        "id": "figures;check-changing-size-for-round-with-big-koef",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 126267,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I have radius 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 14
+                }
+              ],
+              "location": "OOPStepDefs.iHaveRadius(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88014,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I have koef \"4684584\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4684584",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveKoef(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34210,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "change size of the radius",
+            "match": {
+              "location": "OOPStepDefs.changeSizeOfTheRadius()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37009,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "calculate area for the round",
+            "match": {
+              "location": "OOPStepDefs.calculateAreaForTheRound()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135598,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Area is \"7.358527339762144E7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7.358527339762144E7",
+                  "offset": 9
+                }
+              ],
+              "location": "OOPStepDefs.areaIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 26,
+            "name": "@Nonstatic"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "check area for square with integer side",
+        "description": "",
+        "id": "figures;check-area-for-square-with-integer-side",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 135909,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I have side \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveSide(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64066,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "calculate area for the square",
+            "match": {
+              "location": "OOPStepDefs.calculateAreaForTheSquare()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99211,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Area for square is \"25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 20
+                }
+              ],
+              "location": "OOPStepDefs.areaForSquareIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 34,
+            "name": "@Nonstatic"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "check area for square with double side",
+        "description": "",
+        "id": "figures;check-area-for-square-with-double-side",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 131244,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I have side \"8.55\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8.55",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveSide(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28302,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "calculate area for the square",
+            "match": {
+              "location": "OOPStepDefs.calculateAreaForTheSquare()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99211,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Area for square is \"73.1025\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "73.1025",
+                  "offset": 20
+                }
+              ],
+              "location": "OOPStepDefs.areaForSquareIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@Nonstatic"
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "check changing size for square with integer koef",
+        "description": "",
+        "id": "figures;check-changing-size-for-square-with-integer-koef",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 130000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I have side \"9\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveSide(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 114450,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I have koef \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveKoef(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73086,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "change side size for square",
+            "match": {
+              "location": "OOPStepDefs.changeSideSizeForSquare()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41675,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "calculate area for the square",
+            "match": {
+              "location": "OOPStepDefs.calculateAreaForTheSquare()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94856,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Area for square is \"729\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "729",
+                  "offset": 20
+                }
+              ],
+              "location": "OOPStepDefs.areaForSquareIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@Nonstatic"
+          }
+        ]
+      },
+      {
+        "line": 55,
+        "name": "check changing size for square with double koef",
+        "description": "",
+        "id": "figures;check-changing-size-for-square-with-double-koef",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 175096,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I have side \"9\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveSide(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 141506,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I have koef \"3.55\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3.55",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveKoef(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75574,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "change side size for square",
+            "match": {
+              "location": "OOPStepDefs.changeSideSizeForSquare()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32345,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "calculate area for the square",
+            "match": {
+              "location": "OOPStepDefs.calculateAreaForTheSquare()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93924,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Area for square is \"1020.8025\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1020.8025",
+                  "offset": 20
+                }
+              ],
+              "location": "OOPStepDefs.areaForSquareIs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 54,
+            "name": "@Nonstatic"
+          }
+        ]
+      },
+      {
+        "line": 63,
+        "name": "check that square object created and is not null",
+        "description": "",
+        "id": "figures;check-that-square-object-created-and-is-not-null",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128756,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I have side \"5.5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5.5",
+                  "offset": 13
+                }
+              ],
+              "location": "OOPStepDefs.iHaveSide(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69665,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "area of the square is not null",
+            "match": {
+              "location": "OOPStepDefs.areaOfTheSquareIsNotNull()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 62,
+            "name": "@Nonstatic"
+          }
+        ]
+      }
+    ],
+    "name": "Figures",
+    "description": "",
+    "id": "figures",
+    "keyword": "Feature",
+    "uri": "testOOP.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@OOP"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 9,
+        "name": "check that word is palindrom",
+        "description": "",
+        "id": "palindrom-words-and-phrases;check-that-word-is-palindrom;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 140263,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have work \"мадам\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "мадам",
+                  "offset": 13
+                }
+              ],
+              "location": "PalindromStepDefs.iHaveWork(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 763204,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Word is palindrom",
+            "match": {
+              "location": "PalindromStepDefs.wordIsPalindrom()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Palindrom"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "check that word is palindrom",
+        "description": "",
+        "id": "palindrom-words-and-phrases;check-that-word-is-palindrom;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 121602,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have work \"потоп\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "потоп",
+                  "offset": 13
+                }
+              ],
+              "location": "PalindromStepDefs.iHaveWork(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31412,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Word is palindrom",
+            "match": {
+              "location": "PalindromStepDefs.wordIsPalindrom()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Palindrom"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "check that word is palindrom",
+        "description": "",
+        "id": "palindrom-words-and-phrases;check-that-word-is-palindrom;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 99521,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have work \"шалаш\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "шалаш",
+                  "offset": 13
+                }
+              ],
+              "location": "PalindromStepDefs.iHaveWork(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24570,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Word is palindrom",
+            "match": {
+              "location": "PalindromStepDefs.wordIsPalindrom()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Palindrom"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "check that word is not palindrom",
+        "description": "",
+        "id": "palindrom-words-and-phrases;check-that-word-is-not-palindrom",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 111339,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have word \"песня\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "песня",
+                  "offset": 13
+                }
+              ],
+              "location": "PalindromStepDefs.iHaveWord(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2025882,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Word is not palindrom",
+            "match": {
+              "location": "PalindromStepDefs.wordIsNotPalindrom()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "check that case ignored in the word",
+        "description": "",
+        "id": "palindrom-words-and-phrases;check-that-case-ignored-in-the-word",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 110407,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I have word \"АнНа\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "АнНа",
+                  "offset": 13
+                }
+              ],
+              "location": "PalindromStepDefs.iHaveWord(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68732,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Word is palindrom",
+            "match": {
+              "location": "PalindromStepDefs.wordIsPalindrom()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "check that in frase ignored spaces",
+        "description": "",
+        "id": "palindrom-words-and-phrases;check-that-in-frase-ignored-spaces",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 348325,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I have phrase \"Яд ем как мед я\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Яд ем как мед я",
+                  "offset": 15
+                }
+              ],
+              "location": "PalindromStepDefs.iHavePhrase(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103253,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Phrase is palindrom",
+            "match": {
+              "location": "PalindromStepDefs.phraseIsPalindrom()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "check that if there is comma in phrase it isn\u0027t palindrom except cases when it is in the proper place",
+        "description": "",
+        "id": "palindrom-words-and-phrases;check-that-if-there-is-comma-in-phrase-it-isn\u0027t-palindrom-except-cases-when-it-is-in-the-proper-place",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 133732,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I have phrase \"Иди, Сеня, не сиди\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Иди, Сеня, не сиди",
+                  "offset": 15
+                }
+              ],
+              "location": "PalindromStepDefs.iHavePhrase(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88326,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Phrase is not palindrom",
+            "match": {
+              "location": "PalindromStepDefs.phraseIsNotPalindrom()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "check that phrase with a lot of spaces also will be considered as palindrom",
+        "description": "",
+        "id": "palindrom-words-and-phrases;check-that-phrase-with-a-lot-of-spaces-also-will-be-considered-as-palindrom",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 101387,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I have phrase \"Аргентина                    манит               негра\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Аргентина                    манит               негра",
+                  "offset": 15
+                }
+              ],
+              "location": "PalindromStepDefs.iHavePhrase(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88947,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Phrase is palindrom",
+            "match": {
+              "location": "PalindromStepDefs.phraseIsPalindrom()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Palindrom words and phrases",
+    "description": "",
+    "id": "palindrom-words-and-phrases",
+    "keyword": "Feature",
+    "uri": "testPalindrom.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Palindrom"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "check position of last element",
+        "description": "",
+        "id": "snail;check-position-of-last-element",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 209617,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "size of matrix snail is 20",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 24
+                }
+              ],
+              "location": "SnailStepDefs.sizeOfMatrixSnailIs(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1857628,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "create matrix",
+            "match": {
+              "location": "SnailStepDefs.createMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68110,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "find last element",
+            "match": {
+              "location": "SnailStepDefs.findLastElement()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 232009,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "last element is on the left bottom corner",
+            "match": {
+              "location": "SnailStepDefs.checkThatLastElementIsOnTheProperPlace()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "check that start element \u003d 1",
+        "description": "",
+        "id": "snail;check-that-start-element-\u003d-1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 145861,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "size of matrix snail is 25",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 24
+                }
+              ],
+              "location": "SnailStepDefs.sizeOfMatrixSnailIs(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5146810,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "create matrix",
+            "match": {
+              "location": "SnailStepDefs.createMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127201,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "check that first element is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 28
+                }
+              ],
+              "location": "SnailStepDefs.checkThatFirstElementIs(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "check that appropriate element in matrix has correct number",
+        "description": "",
+        "id": "snail;check-that-appropriate-element-in-matrix-has-correct-number",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 136531,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "size of matrix snail is 22",
+            "match": {
+              "arguments": [
+                {
+                  "val": "22",
+                  "offset": 24
+                }
+              ],
+              "location": "SnailStepDefs.sizeOfMatrixSnailIs(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3191837,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "create matrix",
+            "match": {
+              "location": "SnailStepDefs.createMatrix()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221746,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "check that element in matrix column 4, row 6 is 209",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 36
+                },
+                {
+                  "val": "6",
+                  "offset": 43
+                },
+                {
+                  "val": "209",
+                  "offset": 48
+                }
+              ],
+              "location": "SnailStepDefs.checkThatElementInMatrixColumnRowIs(int,int,int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Snail",
+    "description": "",
+    "id": "snail",
+    "keyword": "Feature",
+    "uri": "testSnail.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Snail"
+      }
+    ]
+  }
+]

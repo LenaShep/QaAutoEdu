@@ -26,7 +26,6 @@ public class TestRound {
     @Test
     public void checkAreaCalculation() {
         round.area();
-        round.area();
         Assert.assertTrue("Expected area is 15.707963267948966, and actual result is " + round.area, round.area == 15.707963267948966);
     }
 

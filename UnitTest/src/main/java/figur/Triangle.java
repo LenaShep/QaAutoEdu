@@ -16,9 +16,10 @@ public class Triangle extends Figure {
         this.c = c;
     }
 
-    public void area() {
+    public double area() {
         double p = (a + b + c) / 2;
         area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        return p;
     }
 
     public void changeSize(double koef) {
