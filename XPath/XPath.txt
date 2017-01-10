@@ -1,0 +1,12 @@
+1a .//*[@id='header']
+1b .//*[@id='tabs']/a[2]/span
+1c .//h3[a [contains(@class, 'question')]]
+1d .//h3[a [contains(@title, 'How')]]  
+1e .//div[contains(@class,'tag')]//a[contains(@href, 'bash')]
+2 .//img[contains(@alt, 'Selenium')or contains(@alt, 'logo')]
+3 .//*[@id='sitemap']/li[1]/ul/li[3]/a | //li[1]/ul/li[4]/a | //li[2]/ul/li[3]/a | //li[3]/ul/li[3]/a | //li[3]/ul/li[4]/a | //li[4]/ul/li[3]/a | //li[4]/ul/li[4]/a
+4a .//i[contains(@class, 'prime')]//ancestor::li[@class='s-result-item celwidget']//h2
+4b .//*[contains(@class,'s-item-container') and not (descendant::i[contains(@class, 'a-icon-prime')])]/descendant::a/h2
+5a .//*[@id='navFooter']/div[3]/ul/li[position() > 6]/a
+5b .//*[@id='navFooter']/div[3]/ul/li[position() >= 6]/a
+
