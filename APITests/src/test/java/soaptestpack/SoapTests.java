@@ -15,7 +15,7 @@ public class SoapTests {
     private static SpellService service;
     private static SpellServiceSoap port;
     private CheckTextRequest request;
-    private ObjectFactory objectFactory;
+
 
     @BeforeClass
     public static void createService() {
@@ -26,7 +26,6 @@ public class SoapTests {
     @Before
     public void prepareCleanRequest() {
         request = new CheckTextRequest();
-        objectFactory = new ObjectFactory();
         request.setLang(("RU"));
     }
 
@@ -46,14 +45,8 @@ public class SoapTests {
         request.setText("Все любят катиков");
         CheckTextResponse checkTextResponse = port.checkText(request);
         List<SpellError> listErrors = checkTextResponse.getSpellResult().getError();
-        int pos = 0;
-        int row = 0;
-        for (SpellError error : listErrors) {
-            pos = error.getPos();
-            row = error.getRow();
-        }
-        Assert.assertTrue(pos == 10);
-        Assert.assertTrue(row == 0);
+        Assert.assertTrue(listErrors.get(0).getPos() == 10);
+        Assert.assertTrue(listErrors.get(0).getRow() == 0);
     }
 
     @Test
@@ -61,11 +54,7 @@ public class SoapTests {
         request.setText("я \n любмю \n лето");
         CheckTextResponse checkTextResponse = port.checkText(request);
         List<SpellError> listErrors = checkTextResponse.getSpellResult().getError();
-        int row = 0;
-        for (SpellError error : listErrors) {
-            row = error.getRow();
-        }
-        Assert.assertTrue(row == 1);
+        Assert.assertTrue(listErrors.get(0).getRow() == 1);
     }
 
     @Test
@@ -74,11 +63,7 @@ public class SoapTests {
         CheckTextResponse checkTextResponse = port.checkText(request);
         List<SpellError> listErrors = checkTextResponse.getSpellResult().getError();
         Assert.assertTrue(listErrors.size() == 1);
-        String word = null;
-        for (SpellError error : listErrors) {
-            word = error.getWord();
-        }
-        Assert.assertTrue(word.equals("сиграна"));
+        Assert.assertTrue(listErrors.get(0).getWord().equals("сиграна"));
 
     }
 
@@ -87,10 +72,6 @@ public class SoapTests {
         request.setText("сиграна");
         CheckTextResponse checkTextResponse = port.checkText(request);
         List<SpellError> listErrors = checkTextResponse.getSpellResult().getError();
-        List<String> sList = null;
-        for (SpellError error : listErrors) {
-            sList = error.getS();
-        }
-        Assert.assertTrue(sList.size() == 5);
+        Assert.assertTrue(listErrors.get(0).getS().size() == 5);
     }
 }
