@@ -28,10 +28,7 @@ public class StartBrowserClass {
     public static WebDriver startWebDriver(String browser){
         switch (browser){
             case "FF":
-             /*   File file1 = new File("C:\\Users\\shepelevich\\IdeaProjects\\WebDriverTest\\src\\test\\java\\resources\\geckodriver.exe");
-                System.setProperty("webdriver.gecko.driver",file1.getAbsolutePath());*/
                 return new FirefoxDriver();
-
             case "CH":
                 ChromeDriverService service = new ChromeDriverService.Builder()
                         .usingDriverExecutable(new File("C:\\Users\\shepelevich\\IdeaProjects\\WebDriverTest\\src\\test\\java\\resources\\chromedriver.exe"))
